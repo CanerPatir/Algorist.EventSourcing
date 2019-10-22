@@ -14,7 +14,7 @@ It makes it easier to implement the event sourcing pattern in your .NET project.
 
 It is **not a framework** that manages your application end to end. It doesn't enforce ports and adapters pattern or any of the application level concerns. The aim is to do one thing (Manage aggregate lifecycle) and do that well. If you need to implement command and event handlers you can have a look at something like [SimpleMediator](https://github.com/dasiths/SimpleMediator) or [Brighter](https://github.com/BrighterCommand/Brighter) and it will complement them nicely.
 
-## Before you start
+## Before you start 
 
 - The library targets .NET Standard 2.1
 - *Optional:* Installation of EventStore - https://geteventstore.com/ (You can use the in memory event and snapshot providers when developing)
