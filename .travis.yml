@@ -12,7 +12,8 @@ script:
   - dotnet restore
   - dotnet test
   - dotnet clean
-  - dotnet pack
+  - dotnet build -c Release
+  - dotnet pack -c Release
 deploy:
   skip_cleanup: true
   provider: script
