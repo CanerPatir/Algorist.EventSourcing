@@ -1,14 +1,8 @@
-addons:
-  snaps:
-    - name: dotnet-sdk
-      classic: true
-      channel: latest
-sudo: required
+dotnet: 3.0.100
 mono: none
 language: csharp
 solution: Algorist.EventSourcing.sln
 script:
-  - sudo snap alias dotnet-sdk.dotnet dotnet
   - dotnet restore
   - dotnet test
   - dotnet clean
