@@ -7,15 +7,12 @@ Supports `Event` and `Snapshot` storage providers like EventStore/Redis or SQL S
 
 Start here https://dasith.me/2016/12/02/event-sourcing-examined-part-1-of-3/
 
-## What does NEventLite solve?
-NEventLite makes it easier to implement the event sourcing pattern in your .NET project. The library is opinionated and introduces some patterns to manage the life cycle of your [Aggregates](https://martinfowler.com/bliki/DDD_Aggregate.html) in an event sourced system. It will manage Creating, Loading, Mutating and Persisting Aggregates and Events.
+## What does it solve?
+It makes it easier to implement the event sourcing pattern in your .NET project. The library is opinionated and introduces some patterns to manage the life cycle of your [Aggregates](https://martinfowler.com/bliki/DDD_Aggregate.html) in an event sourced system. It will manage Creating, Loading, Mutating and Persisting Aggregates and Events.
 
 ## What doesn't it solve?
 
-NEventLite is **not a framework** that manages your application end to end. It doesn't enforce ports and adapters pattern or any of the application level concerns. The aim is to do one thing (Manage aggregate lifecycle) and do that well. If you need to implement command and event handlers you can have a look at something like [SimpleMediator](https://github.com/dasiths/SimpleMediator) or [Brighter](https://github.com/BrighterCommand/Brighter) and NEventLite will complement them nicely.
-
-## What about v1.0? Wasn't it advertised as a framework? 
-*NEventLite V1.0 tried to solve similar problems but the scope of the project very large and it was decided to narrow down the scope. If you're still looking for reference it's hosted [here](https://github.com/dasiths/NEventLite/blob/master/legacy/v1.0).*
+It is **not a framework** that manages your application end to end. It doesn't enforce ports and adapters pattern or any of the application level concerns. The aim is to do one thing (Manage aggregate lifecycle) and do that well. If you need to implement command and event handlers you can have a look at something like [SimpleMediator](https://github.com/dasiths/SimpleMediator) or [Brighter](https://github.com/BrighterCommand/Brighter) and it will complement them nicely.
 
 ## Before you start
 
@@ -140,7 +137,7 @@ Using the built in `Session` and `Repository` implementations to manage the Aggr
 
 The library contains storage provider implementation for [EventSore](https://eventstore.org/) and we plan to include a few more in the future. We have also included an in memory event and snapshot storage provider to get you up and running faster.
 
-It's very easy to implement your own as well. Implement `IEventStorageProvider` and `ISnapshotStorageProvider` interfaces an you're good to plug them in. If you need help look at the `NEventLite.StorageProviders.EventStore` project in the repository.
+It's very easy to implement your own as well. Implement `IEventStorageProvider` and `ISnapshotStorageProvider` interfaces an you're good to plug them in. If you need help look at the `Algorist.EventSourcing.Storage.EventStore` project in the repository.
 
 ```csharp
     public interface IEventStorageProvider<TAggregate, TAggregateKey, TEventKey> where TAggregate : AggregateRoot<TAggregateKey, TEventKey>
