@@ -1,0 +1,20 @@
+  
+<Project>
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+    <VersionPrefix>1.0.0</VersionPrefix>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Authors>Caner Patir</Authors>
+    <Company>Algorist</Company>
+    <Product>Algorist EventSourcing</Product>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/canerpatir/Algorist.EventSourcing</RepositoryUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/canerpatir/Algorist/master/icon.png</PackageIconUrl>
+    <Copyright>Caner Patir</Copyright>
+    <PackageLicenseUrl>https://github.com/canerpatir/Algorist.EventSourcing/blob/master/LICENCE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/canerpatir/Algorist.EventSourcing</PackageProjectUrl>
+    <PackageTags>netcore, aspnetcore, event sourcing, ddd, cqrs</PackageTags>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+</Project>

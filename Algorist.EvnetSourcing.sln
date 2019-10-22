@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorist.EventSourcing", "src\Algorist.EventSourcing\Algorist.EventSourcing.csproj", "{7DB0D2B8-D5BE-48C7-AC1F-7C4FF237D438}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorist.EventSourcing.Samples.Common", "src\Algorist.EventSourcing.Samples.Common\Algorist.EventSourcing.Samples.Common.csproj", "{1BBD4155-32ED-41DC-9FC2-32CACF959D84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorist.EventSourcing.Samples.ConsoleApp", "src\Algorist.EventSourcing.Samples.ConsoleApp\Algorist.EventSourcing.Samples.ConsoleApp.csproj", "{B22D7C54-FE2E-492B-A220-AB2CBC45B907}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorist.EventSourcing.Storage.EventStore", "src\Algorist.EventSourcing.Storage.EventStore\Algorist.EventSourcing.Storage.EventStore.csproj", "{C3832D3D-0CB8-4590-B719-DC77FDBA3319}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorist.EventSourcing.Storage.InMemory", "src\Algorist.EventSourcing.Storage.InMemory\Algorist.EventSourcing.Storage.InMemory.csproj", "{E0D1DA47-A890-4F03-9D70-8FBA90025C3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorist.EventSourcing.Tests.Integration", "src\Algorist.EventSourcing.Tests.Integration\Algorist.EventSourcing.Tests.Integration.csproj", "{48ED2C84-DB2F-4243-84F3-77FD8CF6A9E2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".SolutionItems", ".SolutionItems", "{69EBD3C1-2231-4CCD-97E2-E5D30C63F24F}"
+ProjectSection(SolutionItems) = preProject
+	.travis.yml = .travis.yml
+	LICENSE.md = LICENSE.md
+	README.md = README.md
+	common.props = common.props
+EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7DB0D2B8-D5BE-48C7-AC1F-7C4FF237D438}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DB0D2B8-D5BE-48C7-AC1F-7C4FF237D438}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DB0D2B8-D5BE-48C7-AC1F-7C4FF237D438}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DB0D2B8-D5BE-48C7-AC1F-7C4FF237D438}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BBD4155-32ED-41DC-9FC2-32CACF959D84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BBD4155-32ED-41DC-9FC2-32CACF959D84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BBD4155-32ED-41DC-9FC2-32CACF959D84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BBD4155-32ED-41DC-9FC2-32CACF959D84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B22D7C54-FE2E-492B-A220-AB2CBC45B907}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B22D7C54-FE2E-492B-A220-AB2CBC45B907}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B22D7C54-FE2E-492B-A220-AB2CBC45B907}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B22D7C54-FE2E-492B-A220-AB2CBC45B907}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3832D3D-0CB8-4590-B719-DC77FDBA3319}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3832D3D-0CB8-4590-B719-DC77FDBA3319}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3832D3D-0CB8-4590-B719-DC77FDBA3319}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3832D3D-0CB8-4590-B719-DC77FDBA3319}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0D1DA47-A890-4F03-9D70-8FBA90025C3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0D1DA47-A890-4F03-9D70-8FBA90025C3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0D1DA47-A890-4F03-9D70-8FBA90025C3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0D1DA47-A890-4F03-9D70-8FBA90025C3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48ED2C84-DB2F-4243-84F3-77FD8CF6A9E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48ED2C84-DB2F-4243-84F3-77FD8CF6A9E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48ED2C84-DB2F-4243-84F3-77FD8CF6A9E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48ED2C84-DB2F-4243-84F3-77FD8CF6A9E2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {94976242-6E10-41A0-AC88-1D1A23CDF513}
+	EndGlobalSection
+EndGlobal

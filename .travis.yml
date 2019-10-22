@@ -1,0 +1,14 @@
+language: csharp
+solution: Algorist.EventSourcing.sln
+install:
+  - dotnet restore
+script:
+  - dotnet test
+  - dotnet clean
+  - dotnet pack
+deploy:
+  skip_cleanup: true
+  provider: script
+  script: dotnet nuget push **/*.nupkg -k $NUGET_API_KEY -s https://api.nuget.org/v3/index.json
+  on:
+    branch: master

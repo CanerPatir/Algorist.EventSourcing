@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EventStore.Client" Version="5.0.2" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Algorist.EventSourcing.Storage.EventStore\Algorist.EventSourcing.Storage.EventStore.csproj" />
+    <ProjectReference Include="..\Algorist.EventSourcing.Storage.InMemory\Algorist.EventSourcing.Storage.InMemory.csproj" />
+    <ProjectReference Include="..\Algorist.EventSourcing.Samples.Common\Algorist.EventSourcing.Samples.Common.csproj" />
+  </ItemGroup>
+
+</Project>
