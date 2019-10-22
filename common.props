@@ -2,7 +2,7 @@
 <Project>
   <PropertyGroup>
     <LangVersion>latest</LangVersion>
-    <VersionPrefix>1.0.0</VersionPrefix>
+    <VersionPrefix>1.0.1</VersionPrefix>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <Authors>Caner Patir</Authors>
     <Company>Algorist</Company>
