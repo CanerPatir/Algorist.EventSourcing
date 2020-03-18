@@ -155,7 +155,5 @@ It's very easy to implement your own as well. Implement `IEventStorageProvider` 
     }
 ```
 
-There are more examples in the Samples if you need help figuring out how to put everything together.
 
-## Notes
-Please feel free to contribute and improve the code as you see fit. Please raise an issue if you find a bug or have an improvement idea. The repository is shared under the MIT license.
+
